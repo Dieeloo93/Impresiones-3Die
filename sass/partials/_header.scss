@@ -1,0 +1,40 @@
+header{
+    .encabezado {
+        background-color:rgb(26, 26, 88);
+        padding: 1rem;
+        font-size: 20px;
+    }
+    .logo{
+        color: white;
+        font-size: 25px;
+        margin: 0;
+    }    
+    .boton {
+        border-color: white;
+    }    
+    .logo-menu {
+        color: white;
+    }    
+    .links{
+        color: white;
+        display: flex;
+    }    
+    .links:hover {
+        color: red;
+        text-decoration: underline;
+    }    
+    .logo:hover {
+        color: white;
+    }    
+    .div-contenedor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }    
+    .div-colla {
+        justify-content: flex-end;
+    }    
+    .navbar-toggler-icon {
+        color: white;
+    }
+}
