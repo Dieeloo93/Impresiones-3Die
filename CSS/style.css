@@ -128,19 +128,19 @@ main {
   flex-grow: 1;
 }
 .servicio-item h4 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-decoration: underline;
   text-align: center;
   margin: 1rem;
 }
 .servicio-item h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-decoration: underline;
   text-align: center;
-  margin: 1rem;
+  margin: 2rem;
 }
 .servicio-item h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-decoration: underline;
   text-align: center;
   margin: 1rem;
@@ -213,7 +213,6 @@ main {
 }
 
 .contenedor-grid img {
-  width: 100%;
   height: 100%;
 }
 
@@ -258,6 +257,7 @@ h3 {
 .grid-img-3 {
   grid-area: foto3;
   padding: 5px;
+  width: 19rem;
 }
 
 .grid-texto-4 {
@@ -284,139 +284,6 @@ h3 {
   padding: 0.5rem;
 }
 
-@media (max-width: 500px) {
-  .inicio h2 {
-    text-align: center;
-    font-size: 20px;
-  }
-  .inicio p {
-    font-size: 1rem;
-  }
-  .inicio h3 {
-    text-align: center;
-    font-size: 18px;
-    padding: 20px;
-  }
-  .inicio .galeria-items {
-    width: 100%;
-    max-width: 350px;
-    text-align: center;
-    border: 1px solid gray;
-    font-size: 15px;
-    border-radius: 5px;
-    padding: 10px;
-  }
-  .contenedor-grid {
-    grid-template-columns: 75%;
-    grid-template-rows: 150px 150px 150px 150px;
-    grid-template-areas: "titulo" "foto1" "texto3" "foto2" "texto2" "foto3" "texto4";
-  }
-  h2 {
-    grid-area: titulo;
-    font-size: 20px;
-    padding: 5px;
-    text-align: center;
-  }
-  p {
-    font-size: 1rem;
-    text-align: center;
-  }
-  h3 {
-    font-size: 15px;
-    text-align: center;
-  }
-  .grid-texto-4 {
-    text-align: center;
-    font-size: 1rem;
-  }
-  .grid-img-1 {
-    grid-area: foto1;
-    padding: 5px;
-  }
-  .grid-img-4 {
-    display: none;
-  }
-}
-.servicio img {
-  width: 100%;
-  max-width: 350px;
-  font-size: 12px;
-  border-radius: 2px;
-}
-.servicio h2 {
-  font-size: 1rem;
-  margin: 1rem;
-}
-.servicio h3 {
-  font-size: 1rem;
-  margin: 1rem;
-}
-.servicio h4 {
-  font-size: 1rem;
-  margin: 1rem;
-}
-.servicio p {
-  font-size: 1rem;
-  margin: 1rem;
-}
-
-.pasos-contenido img {
-  width: 100%;
-  max-width: 350px;
-  font-size: 12px;
-  border-radius: 2px;
-}
-.pasos-contenido p {
-  text-align: center;
-  font-size: 20px;
-}
-
-.contacto p {
-  font-size: 1rem;
-  padding: 1rem;
-}
-.contacto .contacto-item {
-  font-size: 2rem;
-}
-.contacto .dia {
-  font-size: 1rem;
-  flex-direction: column;
-  align-items: center;
-  margin: 1rem;
-  padding: 1rem;
-  flex-grow: 1;
-}
-.contacto .dia h3 {
-  font-size: 1rem;
-}
-
-.detalle-envio img {
-  width: 100%;
-  max-width: 350px;
-}
-
-.detalle-devolucion img {
-  width: 100%;
-  max-width: 350px;
-}
-
-footer {
-  background-color: rgb(26, 26, 88);
-  color: white;
-  display: grid;
-  grid-template-columns: 75%;
-  grid-template-rows: 50px 50px 50px;
-  grid-template-areas: "textoFooter" "instagramFooter" "wspFooter";
-  justify-content: center;
-  padding: 1rem;
-  align-items: center;
-  font-size: 15px;
-}
-footer .texto-footer {
-  text-align: center;
-  font-size: 15px;
-}
-
 @keyframes efecto {
   0% {
     color: orangered;
@@ -441,7 +308,7 @@ footer {
   justify-content: space-between;
   padding: 1rem;
   align-items: center;
-  font-size: 30px;
+  font-size: 50px;
 }
 footer .texto-footer {
   font-size: 2rem;
@@ -461,4 +328,257 @@ footer .instagram-footer {
 }
 footer .wsp-footer {
   grid-area: wspFooter;
+}
+
+@media (max-width: 500px) {
+  .inicio h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .inicio p {
+    font-size: 1rem;
+  }
+  .inicio h3 {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .inicio .galeria-items {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    border: 1px solid gray;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 1px;
+  }
+  .contenedor-grid {
+    grid-template-columns: 75%;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-areas: "titulo" "foto1" "texto3" "foto2" "texto2" "foto3" "texto4";
+  }
+  h2 {
+    grid-area: titulo;
+    font-size: 20px;
+    padding: 1px;
+    text-align: center;
+  }
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .grid-texto-4 {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .grid-img-1 {
+    grid-area: foto1;
+    padding: 5px;
+  }
+  .grid-img-4 {
+    display: none;
+  }
+  .grid-img-3 {
+    width: 10rem;
+  }
+  .servicio img {
+    width: 100%;
+    max-width: 350px;
+    font-size: 12px;
+    border-radius: 2px;
+  }
+  .servicio h2 {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+  .servicio h3 {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+  .servicio h4 {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+  .servicio p {
+    font-size: 1rem;
+    margin: 0rem;
+  }
+  .pasos-contenido img {
+    width: 100%;
+    max-width: 350px;
+    font-size: 12px;
+    border-radius: 2px;
+  }
+  .pasos-contenido p {
+    text-align: center;
+    font-size: 20px;
+  }
+  .contacto p {
+    font-size: 1rem;
+    padding: 0rem;
+  }
+  .contacto .contacto-item {
+    font-size: 2rem;
+  }
+  .contacto .dia {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    flex-grow: 1;
+  }
+  .contacto .dia h3 {
+    font-size: 1rem;
+  }
+  .detalle-envio img {
+    width: 100%;
+    max-width: 350px;
+  }
+  .detalle-devolucion img {
+    width: 100%;
+    max-width: 350px;
+  }
+  footer {
+    background-color: rgb(26, 26, 88);
+    color: white;
+    display: grid;
+    grid-template-columns: 75%;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-areas: "textoFooter" "instagramFooter" "wspFooter";
+    justify-content: center;
+    padding: 0rem;
+    align-items: center;
+    font-size: 15px;
+    justify-items: center;
+  }
+  footer .texto-footer {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .inicio h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .inicio p {
+    font-size: 2rem;
+  }
+  .inicio h3 {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+  }
+  .inicio .galeria-items {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    border: 1px solid gray;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 2px;
+  }
+  .contenedor-grid {
+    grid-template-columns: 75%;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-areas: "titulo" "foto1" "texto3" "foto2" "texto2" "foto3" "texto4";
+  }
+  h2 {
+    grid-area: titulo;
+    font-size: 30px;
+    padding: 1px;
+    text-align: center;
+  }
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .grid-texto-4 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .grid-img-1 {
+    grid-area: foto1;
+    padding: 0px;
+  }
+  .grid-img-4 {
+    display: none;
+  }
+  .grid-img-3 {
+    width: 10rem;
+  }
+  .servicio img {
+    width: 100%;
+    max-width: 350px;
+    font-size: 20px;
+    border-radius: 2px;
+  }
+  .servicio h2 {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  .servicio h3 {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  .servicio h4 {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  .servicio p {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  .contacto p {
+    font-size: 1.5rem;
+    padding: 0rem;
+  }
+  .contacto .contacto-item {
+    font-size: 3rem;
+  }
+  .contacto .dia {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem;
+    padding: 0rem;
+    flex-grow: 1;
+  }
+  .contacto .dia h3 {
+    font-size: 1.5rem;
+  }
+  .detalle-envio img {
+    width: 100%;
+    max-width: 350px;
+  }
+  .detalle-devolucion img {
+    width: 100%;
+    max-width: 350px;
+  }
+  footer {
+    background-color: rgb(26, 26, 88);
+    color: white;
+    display: grid;
+    grid-template-columns: 75%;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-areas: "textoFooter" "instagramFooter" "wspFooter";
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+    font-size: 15px;
+    justify-items: center;
+  }
+  footer .texto-footer {
+    text-align: center;
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,4 @@
 .contenedor-grid img {
-    width: 100%;
     height: 100%;
 }
 
@@ -45,6 +44,7 @@ h3 {
 .grid-img-3 {
     grid-area: foto3;
     padding: 5px;
+    width: 19rem;
 }
 .grid-texto-4 {
     justify-self: center;

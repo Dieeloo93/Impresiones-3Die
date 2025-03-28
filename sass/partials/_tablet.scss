@@ -1,18 +1,17 @@
-@media (max-width:500px) {
-
+@media(min-width:501px)and (max-width:800px){    
     //INICIO
     .inicio {
         h2 {
             text-align: center;
-            font-size: 20px;
+            font-size: 30px;
         }
         p{
-            font-size: 1rem;
+            font-size: 2rem;
         }
 
         h3 {
             text-align: center;
-            font-size: 18px;
+            font-size: 20px;
             padding: 10px;
         }
 
@@ -21,9 +20,9 @@
             max-width: 350px;
             text-align: center;
             border: 1px solid gray;
-            font-size: 15px;
-            border-radius: 5px;
-            padding: 1px;
+            font-size: 30px;
+            border-radius: 10px;
+            padding: 2px;
         }
     }
 
@@ -42,7 +41,7 @@
         }
         h2 {
             grid-area: titulo;
-            font-size: 20px;
+            font-size: 30px;
             padding: 1px;
             text-align: center;
         }
@@ -53,18 +52,18 @@
         }
 
         h3 {
-            font-size: 15px;
+            font-size: 20px;
             text-align: center;
         }
 
         .grid-texto-4 {
             text-align: center;
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
 
         .grid-img-1 {
             grid-area: foto1;
-            padding: 5px;
+            padding: 0px;
         }
 
         .grid-img-4 {
@@ -73,75 +72,58 @@
         .grid-img-3{
             width: 10rem;
         }
-    
+
     //SERVICIOS
 
     .servicio {
         img {
             width: 100%;
             max-width: 350px;
-            font-size: 12px;
+            font-size: 20px;
             border-radius: 2px;
         }
             h2 {
-                font-size: 1rem;
+                font-size: 1.5rem;
                 margin: 1rem;
             }
 
             h3 {
-                font-size: 1rem;
+                font-size: 1.5rem;
                 margin: 1rem;
             }
 
             h4 {
-                font-size: 1rem;
+                font-size: 1.5rem;
                 margin: 1rem;
             }
 
             p {
-                font-size: 1rem;
-                margin: 0rem;
+                font-size: 1.5rem;
+                margin: 1rem;
             }
         }
     
-
-    //PROCESOS
-
-    .pasos-contenido {
-        img {
-            width: 100%;
-            max-width: 350px;
-            font-size: 12px;
-            border-radius: 2px;
-        }
-
-        p {
-            text-align: center;
-            font-size: 20px;
-        }
-    }
-
     //CONTACTO
     .contacto{
     p {
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding: 0rem;
     }
         .contacto-item {
-            font-size: 2rem;
+            font-size: 3rem;
         }
 
         .dia {
             font-size: 1rem;
             flex-direction: column;
             align-items: center;
-            margin: 0.5rem;
-            padding: 0.5rem;
+            margin: 0rem;
+            padding: 0rem;
             flex-grow: 1;
         }
 
         .dia h3 {
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -165,18 +147,18 @@
         grid-template-columns: 75%;
         grid-template-rows: 50px 50px 50px;
         grid-template-areas:
-            "textoFooter"
-            "instagramFooter"
-            "wspFooter";
+        "textoFooter"
+        "instagramFooter"
+        "wspFooter";
         justify-content: center;
-        padding: 0rem;
+        padding: 1rem;
         align-items: center;
         font-size: 15px;
         justify-items: center;
 
         .texto-footer {
-            text-align: center;
-            font-size: 1rem;
+        text-align: center;
+        font-size: 1rem;
         }
     }
 }
